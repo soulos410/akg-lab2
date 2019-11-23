@@ -1,8 +1,5 @@
 let canvas = document.querySelector('canvas');
-
 let ctx = canvas.getContext('2d');
-ctx.fillStyle = '#000';
-ctx.strokeStyle = '#000';
 
 let currentPolygon = [[20, 140], [70, 75], [120, 10], [170, 75], [220, 140], [120, 140]];
 const resultPolygon = [[1550, 920], [1650, 1000], [1750, 1000], [1850, 920], [1750, 840], [1650, 840]];
@@ -112,16 +109,3 @@ start().then(() => {
 });
 
 // createSeparator(separatorCoords);
-
-
-// ctx.fillStyle = '#000';
-// ctx.fillRect(0, 0, canvas.width, canvas.height);
-// createSixStarsFigure(sixStarsFigureBig, true);
-// ctx.clip();
-// ctx.fillStyle = '#fff';
-// ctx.strokeStyle = '#000';
-// ctx.stroke();
-// ctx.fill();
-// ctx.fillStyle = '#000';
-// createSixStarsFigure(sixStarsFigureSmall, false);
-// ctx.fill();
